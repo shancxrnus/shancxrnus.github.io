@@ -2,10 +2,15 @@
 title: "Shannon Chua's website"
 ---
 
-This is a Quarto website.
+**Introduction**
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Hello! I'm Shannon Chua and I'm currently a Year 2 Psychology student who is second majoring in Communications and New Media. For my final project, I am interested in understanding the changes and trends in lifetime prevalence of mental health disorders in Singapore over the years.
 
-```{r}
-1 + 1
-```
+**Identified Dataset for Data Story**
+
+A dataset I have identified to check the trends is from ourworldindata.org:\
+<https://ourworldindata.org/mental-health#all-charts>
+
+In which the data used in the website is obtained from IHME, Global Burden of Disease Study (2019) – processed by Our World in Data.
+
+The data ranges from 1990 to 2019.
