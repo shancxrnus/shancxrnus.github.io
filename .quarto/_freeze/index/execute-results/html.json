@@ -1,0 +1,14 @@
+{
+  "hash": "71c4f5e530bfd10a9f4e2592cb37c4af",
+  "result": {
+    "markdown": "---\ntitle: \"Shannon Chua's website\"\n---\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
