@@ -14,3 +14,6 @@ A dataset I have identified to check the trends is from ourworldindata.org:\
 In which the data used in the website is obtained from IHME, Global Burden of Disease Study (2019) – processed by Our World in Data.
 
 The data ranges from 1990 to 2019.
+
+I will use the owidR package to extract necessary data for my data story.\
+<https://cran.r-project.org/web/packages/owidR/index.html>

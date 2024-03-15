@@ -4,6 +4,13 @@
     "href": "index.html",
     "title": "Shannon Chua’s website",
     "section": "",
-    "text": "Introduction\nHello! I’m Shannon Chua and I’m currently a Year 2 Psychology student who is second majoring in Communications and New Media. For my final project, I am interested in understanding the changes and trends in lifetime prevalence of mental health disorders in Singapore over the years.\nIdentified Dataset for Data Story\nA dataset I have identified to check the trends is from ourworldindata.org:\nhttps://ourworldindata.org/mental-health#all-charts\nIn which the data used in the website is obtained from IHME, Global Burden of Disease Study (2019) – processed by Our World in Data.\nThe data ranges from 1990 to 2019."
+    "text": "Introduction\nHello! I’m Shannon Chua and I’m currently a Year 2 Psychology student who is second majoring in Communications and New Media. For my final project, I am interested in understanding the changes and trends in lifetime prevalence of mental health disorders in Singapore over the years.\nIdentified Dataset for Data Story\nA dataset I have identified to check the trends is from ourworldindata.org:\nhttps://ourworldindata.org/mental-health#all-charts\nIn which the data used in the website is obtained from IHME, Global Burden of Disease Study (2019) – processed by Our World in Data.\nThe data ranges from 1990 to 2019.\nI will use the owidR package to extract necessary data for my data story.\nhttps://cran.r-project.org/web/packages/owidR/index.html"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About\n\n1 + 1\n\n[1] 2"
   }
 ]
