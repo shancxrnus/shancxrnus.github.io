@@ -1,14 +1,14 @@
 {
-    "id": "DC8CC765",
+    "id": "92D3696E",
     "path": "~/GitHub/shancxrnus.github.io/about.qmd",
     "project_path": "about.qmd",
     "type": "quarto_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1710249814740.0,
-    "source_on_save": true,
-    "relative_order": 3,
+    "created": 1710946447915.0,
+    "source_on_save": false,
+    "relative_order": 2,
     "properties": {
         "rmdVisualMode": "true",
         "rmdVisualWrapConfigured": "true",
@@ -25,7 +25,7 @@
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1710254763516,
+    "last_content_update": 1710254763,
     "read_only": false,
     "read_only_alternatives": []
 }

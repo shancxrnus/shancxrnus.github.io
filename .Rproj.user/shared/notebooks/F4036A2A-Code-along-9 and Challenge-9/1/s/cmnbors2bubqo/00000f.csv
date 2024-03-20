@@ -1,0 +1,4 @@
+"0","knitr::include_graphics(""C:/Users/shanm/Desktop/codingpics/change1.png"")"
+"2","Error in knitr::include_graphics(""C:/Users/shanm/Desktop/codingpics/change1.png"") : 
+  Cannot find the file(s): ""C:/Users/shanm/Desktop/codingpics/change1.png""
+"
