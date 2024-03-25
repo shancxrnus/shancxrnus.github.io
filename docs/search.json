@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Shannon Chua’s website",
     "section": "",
-    "text": "Introduction\nHello! I’m Shannon Chua and I’m currently a Year 2 Psychology student who is second majoring in Communications and New Media. For my final project, I am interested in understanding the changes and trends in lifetime prevalence of mental health disorders in Singapore over the years.\nIdentified Dataset for Data Story\nA dataset I have identified to check the trends is from ourworldindata.org:\nhttps://ourworldindata.org/mental-health#all-charts\nIn which the data used in the website is obtained from IHME, Global Burden of Disease Study (2019) – processed by Our World in Data.\nThe data ranges from 1990 to 2019.\nI will use the owidR package to extract necessary data for my data story.\nhttps://cran.r-project.org/web/packages/owidR/index.html"
+    "text": "Introduction\nHello! I’m Shannon Chua and I’m currently a Year 2 Psychology student who is second majoring in Communications and New Media. For my final project, I am interested in understanding the changes and trends in lifetime prevalence of mental health disorders in Singapore over the years.\nIdentified Dataset for Data Story\nA dataset I have identified is from data.gov.sg. It is a dataset from the Graduate Employment Survey conducted by NTU, NUS, SMU, SIT (from 2014), SUTD (from 2015) and SUSS (from 2018) annually. The data ranges from 2013 to 2021.\nhttps://beta.data.gov.sg/datasets/d_3c55210de27fcccda2ed0c63fdd2b352/view\nMy problem statement is: How have the employment rate and starting salary of Singaporean university graduates changed over time for different majors from 2013 to 2021?\nTesting Sample Shiny App"
   },
   {
     "objectID": "about.html",

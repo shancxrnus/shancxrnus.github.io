@@ -1,26 +1,26 @@
 {
-    "id": "91BCFDE5",
+    "id": "701BA82B",
     "path": "C:/Users/shanm/Desktop/School/Module Stuff/Year 2 Sem 2/NM2207/Final Project - Data Story/Week 9 Diary Entry New.Rmd",
     "project_path": null,
     "type": "r_markdown",
-    "hash": "2448160838",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1710946476208.0,
+    "created": 1711370858382.0,
     "source_on_save": false,
-    "relative_order": 3,
+    "relative_order": 2,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "14,92",
-        "scrollLine": "13"
+        "cursorPosition": "14,0",
+        "scrollLine": "10"
     },
     "folds": "",
-    "lastKnownWriteTime": 1710950329,
+    "lastKnownWriteTime": 1710951874,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1710950329304,
+    "last_content_update": 1710951874,
     "read_only": false,
     "read_only_alternatives": []
 }

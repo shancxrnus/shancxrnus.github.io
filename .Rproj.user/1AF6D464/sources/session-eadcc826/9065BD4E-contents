@@ -1,0 +1,37 @@
+---
+title: "Week 10 Diary Entry"
+author: "Shannon Chua Xuan Run"
+date: "2024-03-25"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## (1) List the visualizations that you are going to use in your project (What are the variables that you are going to plot? How will it answer your larger question? Why are these the best visualizations to convey your story?)
+Columns needed to answer this question include "degree", "employment_rate_overall" and "gross_monthly_median". I will be plotting a line graph to illustrate changes in employment rate and gross monthly median income over a period of time. A line graph will help us visualise the changes over time in a direct manner and 
+
+## (2) How do you plan to make it interactive? (What features of ggplot2/shiny/markdown do you plan to use to make the story interactive) 
+I plan to make it interactive by allowing for users to sort the data according to students' universities and majors. This will allow them to see the trends based on the schools and majors that they are interested in. I would use the filter feature 
+
+## (3) What concepts incorporated in your project were taught in the course and which ones were self-learnt? (Create a table with topics in one column and Weeks in the other to indicate which concept taught in which week is being used. Leave the entry of the Week column empty for self-learnt concepts)
+The ones taught in the course would be plotting a line graph using ggplot and 
+```{r, eval=TRUE,echo=TRUE,error=FALSE} 
+data= matrix(c(7,"Visualising numeric variables and its customisations", 8,"Plotting a line graph and tidying data", 9 ,"User interface: Output - filter according to categories", "na", "Plotting more detailed line graphs ", "na","Filtering na data"),ncol=2, byrow=TRUE)
+ 
+# specify the column names and row names of matrix
+colnames(data) <- c("Week","Topics")
+rownames(data) <- c("1",'2','3','4','5')
+
+# assign to table
+final=as.table(data)
+ 
+# display
+final
+```
+
+## Include the challenges and errors that you faced and how you overcame them.
+

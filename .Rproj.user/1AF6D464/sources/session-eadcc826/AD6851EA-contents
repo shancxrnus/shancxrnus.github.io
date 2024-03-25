@@ -1,0 +1,108 @@
+---
+title: "Code-along-9 and Challenge-9"
+author: "Shannon Chua Xuan Run"
+date: "2024-03-18"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Code-Along 9
+
+## Example (slide 6)
+
+```{r, eval=TRUE,echo=TRUE,error=FALSE} 
+install.packages("shiny")
+library(shiny)
+runExample("01_hello")
+```
+## Example app: user interface +server function (slide 9&10)
+```{r, eval=TRUE,echo=TRUE,error=FALSE} 
+install.packages(shiny)
+library(shiny)
+ui <- fluidPage(
+      titlePanel("Hello Shiny!"),
+      sidebarLayout(
+        sidebarPanel(sliderInput(inputId = "bins",
+            label = "Number of bins:",
+            min = 1,
+            max = 50,
+            value = 30)),
+      mainPanel(plotOutput(outputId = "distPlot"))))
+server <- function(input, output) {
+  output$distPlot <- renderPlot({
+x <- faithful$waiting
+bins <- seq(min(x), max(x), length.out = input$bins + 1)
+hist(x, breaks = bins, col = "#007bc2", border = "white",
+xlab = "Waiting time to next eruption (in mins)",
+main = "Histogram of waiting times")
+})
+}
+shinyApp(ui=ui, server=server)
+```
+
+## Example to follow along
+```{r, eval=TRUE,echo=TRUE,error=FALSE} 
+library(shiny)
+library(ggplot2)
+ui <- fluidPage(
+      titlePanel("A Sample Web App"),
+      sidebarLayout(
+        sidebarPanel(
+         p("text on the sidebar"),
+          sliderInput("inp2",
+             label = "User Input",
+                 min = 1,
+                 max = 50,
+                 value = 30),
+         selectInput("inp3", "Choose color:", 
+                     choices=c("red","blue","yellow"))
+),
+      mainPanel(
+        h1("A sample plot"),
+        h2("Histogram"),
+        p("text on the main panel"),
+        strong("text on the sidebar"),
+        br(),
+        em("text on the sidebar"),
+        br(),
+        code("text on the sidebar"),
+        p("abc", span("def", style="color:blue"),"ghi"),
+        plotOutput("out1")
+        )
+    )
+)
+server <- function(input, output) {
+  output$out1 <- renderPlot({
+    ggplot(faithful) + geom_histogram(aes(x=waiting),
+                                      bins = input$inp2,
+                                      fill = input$inp3)
+})
+}
+shinyApp(ui, server)
+```
+
+### Challenge-9
+
+##Choose example
+```{r, eval=TRUE,echo=TRUE,error=FALSE} 
+library(shiny)
+runExample("09_upload")
+```
+
+
+# Dashboard and Changes
+I added a header and subheader to the main panel, alongside an image to illustrate what kind of file users should be uploading. This was to be displayed above the output of the .csv file so it is placed above tableOutput("contents").
+```{r, out.height= "667px",out.width= "500px",echo=TRUE,eval=TRUE,fig.cap="My adjustments to the example 09_upload)"}
+knitr::include_graphics("C:/Users/shanm/Desktop/codingpics/adjustments.png")
+```
+```{r, out.height= "667px",out.width= "500px",echo=TRUE,eval=TRUE,fig.cap="My adjustments to 09_upload on the main panel"}
+knitr::include_graphics("C:/Users/shanm/Desktop/codingpics/changes1.png")
+```
+```{r, out.height= "667px",out.width= "500px",echo=TRUE,eval=TRUE,fig.cap="How the changes look after uploading a .csv file"}
+knitr::include_graphics("C:/Users/shanm/Desktop/codingpics/changes2.png")
+```

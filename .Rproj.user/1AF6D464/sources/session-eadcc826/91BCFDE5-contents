@@ -1,0 +1,43 @@
+---
+title: "Week 9 Diary Entry"
+author: "Shannon Chua Xuan Run"
+date: "2024-03-19"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## **(1)** What is the question that you are going to answer? (**Title**: One sentence that ends with a question mark that could act like the title of your data story)
+How have the employment rate and starting salary of Singaporean university graduates changed over time for different majors from 2013 to 2021?
+
+Data source:  https://beta.data.gov.sg/datasets/d_3c55210de27fcccda2ed0c63fdd2b352/view
+
+Data story topic and data source has been changed as the data extracted from Our World in Data for the topic of mental health was outdated and had insufficient information to provide meaningful analysis.
+
+
+## **(2)** Why is this an important question? (Answer: 3 sentences, each of which has some evidence, e.g., *“According to the United Nations...”* to justify why the question you have chosen is important)
+Experts have warned about the increasing concern of AI threatening different industries' jobs as well as uncertainty amid more geo-political tension and their impacts on the job market (Lee, 2024). Furthermore, university graduates' employment within 6 months also fell from 2022 to 2023 (Hamzah, 2024). While median salary has increased, the median salary of graduates from each major has changed to varying degrees (Chan, 2024).
+
+As such, it is important to analyse and understand trends from past years of data to understand more about what university graduates can expect from their major, allowing them to anticipate and adapt to changing job market trends. It is also important to analyse past year trends so that prospective university students can better consider which industry they may want to pursue for a more stable future.
+
+**References:**
+
+Chan, G. (2024, February 22). Fresh university grads get higher salaries, though fewer find full- or part-time work: Survey. The Straits Times. https://www.straitstimes.com/singapore/fresh-university-grads-get-higher-salaries-though-fewer-find-full-or-part-time-work-survey 
+
+Hamzah, F. (2024, February 22). Fewer graduates found work 6 months after leaving university in 2023, but median salary up slightly: Survey. CNA. https://www.channelnewsasia.com/singapore/joint-autonomous-universities-graduate-employment-survey-2023-fewer-working-median-salary-4141471#:~:text=The%20median%20gross%20monthly%20salary,cent%20between%202021%20and%202022. 
+
+Lee, L. (2024, January 3). Look ahead 2024: Amid job disruptions due to AI, remote work and Tech retrenchments, youth urged to stay agile by upskilling. TODAY. https://www.todayonline.com/singapore/look-ahead-2024-job-market-uncertain-some-bright-spots-agile-upskill-2335281 
+
+
+## **(3)** Which rows and columns of the dataset will be used to answer this question? (Answer: Actual names of the variables in the dataset that you plan to use)
+Columns needed to answer this question include "degree", "employment_rate_overall" and "gross_monthly_median".
+
+
+## Include the challenges and errors that you faced and how you overcame them.
+Previously, my data source and data story was on the topic of prevelance of different mental disorders in Singapore from 1990 to 2019 and was planned to be obtained Our World in Data. However, the data source was outdated and many charts are already provided on the site and data sets are not detailed enough for meaningful analysis.
+
+After having a look through the data, some issues I may face while processing the data includes having to sort through "na" observations. Another issue may be that the same major may have different names in differnt universities and I may have to standardise the data.
