@@ -5,7 +5,7 @@ account: shancxr
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11584299
-bundleId: 8420994
+bundleId: 8421061
 url: https://shancxr.shinyapps.io/sample_app_2207/
 version: 1
 asMultiple: FALSE

@@ -11,13 +11,15 @@ ui <- fluidPage(
   titlePanel("Graduate Employment Survey"),
   sidebarLayout(
     position="left",
-    headerPanel("Choose your University and Major"),
+    headerPanel(h3("Choose your interested University, Major")),
     sidebarPanel(
       selectInput("university", "Choose a University",
                   choices = c("NUS","NTU","SMU","SIT", "SUSS","SUTD")),
+        selectInput("degree", "Choose a Degree",
+                  choices = c("Accountancy and Business","Accountancy (3-yr direct Honours Programme)
+","Business (3-yr direct Honours Programme)","Business and Computing","Aerospace Engineering
+","Bioengineering","More")),
       selectInput("dataobserved", "Choose a Measurement",
-                  choices = c("Overall Employment Rate","Gross Monthly Income")),
-      selectInput("degree", "Choose a Degree",
                   choices = c("Overall Employment Rate","Gross Monthly Income")),
       mainPanel(plotOutput("line")
       )
