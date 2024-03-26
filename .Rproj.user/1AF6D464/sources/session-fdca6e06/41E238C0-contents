@@ -1,10 +1,16 @@
 library(shiny)
 library(tidyverse)
-ges <- read.csv("GraduateEmploymentSurvery.csv")
+library(ggplot2)
+ges <- read.csv("GraduateEmploymentSurvey.csv")
+ges_clean <- na.omit(ges)
+ggplot(ges_clean) +
+  aes(x=year,y=employment_rate_overall) +
+  geom_point() +
+  geom_line() 
+  
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-  titlePanel("The change in employment rate and starting salary of Singaporean university graduates changed over time for different majors from 2013 to 2021?"),
   sidebarLayout(
     sidebarPanel(sliderInput("samplesize","Sample Size:",min = 100,max = 10000,value = 1000)),
     mainPanel(plotOutput("distPlot"))

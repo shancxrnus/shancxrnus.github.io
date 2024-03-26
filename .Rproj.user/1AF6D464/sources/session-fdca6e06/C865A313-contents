@@ -14,16 +14,16 @@ ui <- fluidPage(
     headerPanel("Choose your University and Major"),
     sidebarPanel(
       selectInput("university", "Choose a University",
-                  choices = c("NUS","NTU","SMU","SIT", "SUSS","SUTD")),
+      choices = c("NUS","NTU","SMU","SIT", "SUSS","SUTD")),
       selectInput("dataobserved", "Choose a Measurement",
                   choices = c("Overall Employment Rate","Gross Monthly Income")),
       selectInput("degree", "Choose a Degree",
                   choices = c("Overall Employment Rate","Gross Monthly Income")),
-      mainPanel(plotOutput("line")
-      )
+    mainPanel(plotOutput("line")
     )
+   )
   )
-)
+ )
 
 server <- function(input, output) {
   eventReactive(input$university, {

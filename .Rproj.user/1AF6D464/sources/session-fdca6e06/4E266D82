@@ -1,31 +1,31 @@
 {
-    "id": "544B01FA",
+    "id": "4E266D82",
     "path": "~/GitHub/shancxrnus.github.io/index.qmd",
     "project_path": "index.qmd",
     "type": "quarto_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1711391745816.0,
+    "created": 1711437006031.0,
     "source_on_save": false,
-    "relative_order": 5,
+    "relative_order": 1,
     "properties": {
-        "rmdVisualMode": "false",
+        "rmdVisualMode": "true",
         "rmdVisualWrapConfigured": "true",
         "source_window_id": "",
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "973:286.6666564941406",
+        "rmdVisualModeLocation": "2:0",
         "cursorPosition": "13,34",
-        "scrollLine": "10"
+        "scrollLine": "0"
     },
     "folds": "",
     "lastKnownWriteTime": 1711391970,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1711391970455,
+    "last_content_update": 1711391970,
     "read_only": false,
     "read_only_alternatives": []
 }

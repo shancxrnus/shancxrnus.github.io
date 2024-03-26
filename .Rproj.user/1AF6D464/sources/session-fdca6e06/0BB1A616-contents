@@ -20,11 +20,11 @@ I plan to make it interactive by allowing for users to sort the data according t
 ## (3) What concepts incorporated in your project were taught in the course and which ones were self-learnt? (Create a table with topics in one column and Weeks in the other to indicate which concept taught in which week is being used. Leave the entry of the Week column empty for self-learnt concepts)
  
 ```{r, eval=TRUE,echo=TRUE,error=FALSE} 
-data= matrix(c(7,"Visualising numeric variables and its customisations", 8,"Plotting a line graph and tidying data", 9 ,"User interface: Output - filter according to categories", "na", "Plotting more detailed line graphs ", "na","Filtering na data"),ncol=2, byrow=TRUE)
+data= matrix(c(4,"Manipulating data",7,"Visualising numeric variables and its customisations", 8,"Plotting a line graph and tidying data", 9 ,"User interface: Output - filter according to categories", "na", "Plotting more detailed line graphs with shiny", "na","Filtering na data"),ncol=2, byrow=TRUE)
  
 # specify the column names and row names of matrix
 colnames(data) <- c("Week","Topics")
-rownames(data) <- c("1",'2','3','4','5')
+rownames(data) <- c("1",'2','3','4','5','6')
 
 # assign to table
 final=as.table(data)

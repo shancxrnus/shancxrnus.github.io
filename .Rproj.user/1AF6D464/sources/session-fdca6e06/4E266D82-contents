@@ -1,0 +1,20 @@
+---
+title: "Shannon Chua's website"
+---
+
+**Introduction**
+
+Hello! I'm Shannon Chua and I'm currently a Year 2 Psychology student who is second majoring in Communications and New Media. For my final project, I am interested in understanding the changes and trends in lifetime prevalence of mental health disorders in Singapore over the years.
+
+**Identified Dataset for Data Story**
+
+A dataset I have identified is from data.gov.sg. It is a dataset from the Graduate Employment Survey conducted by NTU, NUS, SMU, SIT (from 2014), SUTD (from 2015) and SUSS (from 2018) annually. The data ranges from 2013 to 2021.\
+<https://beta.data.gov.sg/datasets/d_3c55210de27fcccda2ed0c63fdd2b352/view>
+
+My problem statement is: How have the employment rate and starting salary of Singaporean university graduates changed over time for different majors from 2013 to 2021?
+
+**Testing Sample Shiny App**
+
+```{=html}
+<iframe height="400" width="100%" frameborder="no" src="https://shancxr.shinyapps.io/sample_app_2207/"> </iframe>
+```
