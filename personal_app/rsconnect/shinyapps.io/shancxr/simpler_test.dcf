@@ -1,0 +1,12 @@
+name: simpler_test
+title: simpler_test
+username: shancxr
+account: shancxr
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11643776
+bundleId: 8446846
+url: https://shancxr.shinyapps.io/simpler_test/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
