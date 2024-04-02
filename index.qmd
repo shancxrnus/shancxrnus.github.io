@@ -19,6 +19,17 @@ I chose to plot a line graph as the continuous variable I am dealing with for th
 
 The shiny app allows users to choose the university of interest, alongside which measurement they are interested in viewing - average employment rate or average gross monthly income across all majors.
 
+I used plotly so that users can hover to see the specific value of data points and zoom on areas of interest on the line graph.
+
 ```{=html}
 <iframe height="400" width="100%" frameborder="no" src="https://shancxr.shinyapps.io/simpler_test/"> </iframe>
 ```
+An interesting trend observed for the changes in average overall employment rate is how the overall employment rate increased for NUS, SMU and SIT from 2020 to 2021 but decreased for NTU, SUSS, and SUTD. A possible reason for this is that employers are seeking more outspoken and proactive graduate students. For universities like SMU, they have focused on training students with heavy emphasis on oral presentations and practive group work (The Straits Times, 2023). This matches up to what employers look for in graduates, with communication, problem-solving and teamwork being highly rated by employers as valuable (Singapore Business Review, 2023). Some employers have also mentioned that NTU graduates may lack proactiveness.
+
+Meanwhile, overall gross monthly income has increased for graduates across all universities.
+
+**Bibliography**
+
+Singapore Business Review. (2023, July). *What Skills do Singapore Employers Value?*. What skills do Singapore employers value? \| Singapore Business Review. https://sbr.com.sg/hr-education/news/what-skills-do-singapore-employers-value
+
+The Straits Times. (2023, May 12). *Getting hired faster and higher wages: How this university is setting up its graduates for Success*. Getting hired faster and higher wages: How this university is setting up its graduates for success. https://www.straitstimes.com/singapore/parenting-education/smu-hired-faster-higher-wages-university-graduates
