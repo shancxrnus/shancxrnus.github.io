@@ -1,5 +1,0 @@
-install.packages("rsconnect")
-rsconnect::setAccountInfo(name='shancxr',
-                          token='3D024BD872822C5E09A13F8ACB26A04E',
-                          secret='HmkjHm4Grah2ka5vBfsDp3J4qmE9gAEzv63RFtT+')
-

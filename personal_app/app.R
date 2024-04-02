@@ -1,46 +1,28 @@
 library(shiny)
 library(tidyverse)
-library(ggplot2)
 ges <- read.csv("GraduateEmploymentSurvey.csv")
-ges_clean <- na.omit(ges)
-ges_clean$employment_rate_overall <- as.numeric(ges_clean$employment_rate_overall)
 
-head(ges_clean)
-
+# Define UI for application that draws a histogram
 ui <- fluidPage(
-  titlePanel("Graduate Employment Survey"),
+  titlePanel("The change in employment rate and starting salary of Singaporean university graduates changed over time for different majors from 2013 to 2021?"),
   sidebarLayout(
-    position="left",
-    headerPanel(h3("Choose your interested University, Major")),
-    sidebarPanel(
-      selectInput("university", "Choose a University",
-                  choices = c("NUS","NTU","SMU","SIT", "SUSS","SUTD")),
-        selectInput("degree", "Choose a Degree",
-                  choices = c("Accountancy and Business","Accountancy (3-yr direct Honours Programme)
-","Business (3-yr direct Honours Programme)","Business and Computing","Aerospace Engineering
-","Bioengineering","More")),
-      selectInput("dataobserved", "Choose a Measurement",
-                  choices = c("Overall Employment Rate","Gross Monthly Income")),
-      mainPanel(plotOutput("line")
-      )
-    )
+    sidebarPanel(sliderInput("samplesize","Sample Size:",min = 100,max = 10000,value = 1000)),
+    mainPanel(plotOutput("distPlot"))
   )
 )
 
+# Define server logic required to draw a histogram
 server <- function(input, output) {
-  eventReactive(input$university, {
-    switch(input$university,
-           "NUS" = "National University of Singapore",
-           "NTU" = "Nanyang Technological University",
-           "SMU" = "Singapore Management University",
-           "SIT" = "Singapore Institute of Technology",
-           "SUSS" = "Singapore University of Social Sciences",
-           "SUTD" = "Singapore University of Technology and Design")
-  }, ignoreNULL = FALSE)
-  output$line <- renderPlot({
-    ggplot(ges_clean %>% filter(University == input$university), 
-           aes(year, "Graduates' Overall Employment Rate" 
-           )) + geom_line()
+  output$distPlot <- renderPlot({
+    if (input$data_type == "Employment Rate") {
+      ggplot(ges, aes(x = year, y = employment_rate_overall)) +
+        geom_line() +
+        labs(x = "Year", y = "Employment Rate", title = "Employment Rate Over Time")
+    } else if (input$data_type == "Starting Salary") {
+      ggplot(ges, aes(x = year, y = starting_salary)) +
+        geom_line() +
+        labs(x = "Year", y = "Starting Salary", title = "Starting Salary Over Time")
+    }
   })
 }
 

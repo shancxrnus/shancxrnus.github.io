@@ -1,0 +1,32 @@
+---
+title: "test"
+author: "Shannon Chua Xuan Run"
+date: "2024-04-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(shiny)
+library(tidyverse)
+library(ggplot2)
+ges <- read.csv("GraduateEmploymentSurvey.csv")
+ges_clean <- na.omit(ges)
+ges_clean$employment_rate_overall <- as.numeric(ges_clean$employment_rate_overall)
+ges_clean$gross_monthly_median <- as.numeric(ges_clean$gross_monthly_median)
+head(ges_clean)
+
+average_ero <- ges_clean %>%
+  group_by(year, university) %>%
+  summarise(average_employment_rate_overall = mean(employment_rate_overall, na.rm = TRUE))
+
+average_gmm <- ges_clean %>%
+  group_by(year, university) %>%
+  summarise(average_gross_monthly_median = mean(gross_monthly_median, na.rm = TRUE))
+
+
+
+```
