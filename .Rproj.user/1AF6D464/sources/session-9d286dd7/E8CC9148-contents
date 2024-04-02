@@ -27,6 +27,10 @@ average_gmm <- ges_clean %>%
   group_by(year, university) %>%
   summarise(average_gross_monthly_median = mean(gross_monthly_median, na.rm = TRUE))
 
+average_data <- list(
+  "Average Overall Employment Rate" = average_ero,
+  "Average Gross Monthly Income" = average_gmm)
 
+average_data
 
 ```

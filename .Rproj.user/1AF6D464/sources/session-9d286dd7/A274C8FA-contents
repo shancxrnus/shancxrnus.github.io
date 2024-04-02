@@ -1,6 +1,7 @@
 library(shiny)
 library(tidyverse)
 library(ggplot2)
+library(plotly)
 ges <- read.csv("GraduateEmploymentSurvey.csv")
 ges_clean <- na.omit(ges)
 ges_clean$employment_rate_overall <- as.numeric(ges_clean$employment_rate_overall)
@@ -14,6 +15,8 @@ average_ero <- ges_clean %>%
 average_gmm <- ges_clean %>%
   group_by(year, university) %>%
   summarise(average_gross_monthly_median = mean(gross_monthly_median, na.rm = TRUE))
+
+combined_data <- list()
 
 nus_years <- c(2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021)
 ntu_years <- c(2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021)
@@ -33,9 +36,9 @@ ui <- fluidPage(
                   choices = c("NUS","NTU","SMU","SIT", "SUSS","SUTD")),
       selectInput("dataobserved", "Choose a Measurement",
                   choices = c("Average Overall Employment Rate","Average Gross Monthly Income"))
-      ),
+    ),
     mainPanel(
-      plotOutput("line")
+      plotlyOutput("line")
     )
   )
 )
@@ -63,18 +66,17 @@ server <- function(input, output) {
     )
   })
   
-  output$line <- renderPlot({
+  output$line <- renderPlotly({
     req(input$university)  # Ensure university is selected
     
-    # Placeholder for actual data processing and plotting 
-    # Depending on the selected data type, you'll load and plot the appropriate data
+    # What happens if option for Average Overall Employment Rate is selected
     if (input$dataobserved == "Average Overall Employment Rate") {
       # Plot average overall employment rate over time
       ggplot(university_data_ero(), aes(x = year, y = average_employment_rate_overall)) +
         geom_line() +
         labs(x = "Year", y = "Average Overall Employment Rate(%)", title = "Overall Employment Rate Over Time") +
         scale_x_continuous(breaks = unique(university_data_ero()$year))
-    } else if (input$dataobserved == "Average Gross Monthly Income") {
+    } else if (input$dataobserved == "Average Gross Monthly Income") { #What happens if other option is selected
       # Plot average gross monthly income over time
       ggplot(university_data_gmm(), aes(x = year, y = average_gross_monthly_median)) +
         geom_line() +
@@ -85,5 +87,6 @@ server <- function(input, output) {
 }
 # Run the application 
 shinyApp(ui = ui, server = server)
+
 
 

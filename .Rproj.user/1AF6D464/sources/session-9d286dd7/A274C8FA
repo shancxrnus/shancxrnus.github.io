@@ -3,7 +3,7 @@
     "path": "C:/Users/shanm/Desktop/School/Module Stuff/Year 2 Sem 2/NM2207/testcode/test/simpler_test/app.R",
     "project_path": null,
     "type": "r_source",
-    "hash": "0",
+    "hash": "3744361895",
     "contents": "",
     "dirty": false,
     "created": 1712059659472.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "30,44",
-        "scrollLine": "23"
+        "cursorPosition": "83,71",
+        "scrollLine": "76"
     },
     "folds": "",
-    "lastKnownWriteTime": 1712060953,
+    "lastKnownWriteTime": 1712082889,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1712060953513,
+    "last_content_update": 1712082889962,
     "read_only": false,
     "read_only_alternatives": []
 }

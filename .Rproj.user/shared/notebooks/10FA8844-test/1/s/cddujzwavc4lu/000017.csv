@@ -7,3 +7,10 @@
 "0","  group_by(year, university) %>%"
 "0","  summarise(average_gross_monthly_median = mean(gross_monthly_median, na.rm = TRUE))"
 "2","`summarise()` has grouped output by 'year'. You can override using the `.groups` argument."
+"0","average_data <- list("
+"0","  ""Average Overall Employment Rate"" = average_ero,"
+"0","  ""Average Gross Monthly Income"" = average_gmm)"
+"0",""
+"0","average_data"
+"1","$`Average Overall Employment Rate`
+"
