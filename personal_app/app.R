@@ -43,8 +43,8 @@ ui <- fluidPage(
     mainPanel(
       tabsetPanel(
         tabPanel("Line Graph", plotlyOutput("line")),
-        tabPanel("Bar Chart Comparing Overall Employment Rate", plotlyOutput("bar_ero")),
-        tabPanel("Bar Chart Comparing Average Gross Monthly Income", plotlyOutput("bar_gmm"))
+        tabPanel("Bar Chart Comparing Overall Employment Rate (OER)", plotlyOutput("bar_ero")),
+        tabPanel("Bar Chart Comparing Average Gross Monthly Income (GMI)", plotlyOutput("bar_gmm"))
       )
     )
   )
@@ -95,14 +95,14 @@ server <- function(input, output) {
   output$bar_ero <- renderPlotly({
     ggplot(average_ero, aes(x = year, fill=university)) +
       geom_bar(stat = "identity", aes(y = average_employment_rate_overall), position = "dodge") +
-      labs(title = "Bar Graph Comparing Universities' Overall Employment Rate Over Time", 
+      labs(title = "Bar Graph showing Universities' Average OER Over Time", 
            x = "Year", y = "Average Employment Rate overall") +
     scale_x_continuous(breaks = unique(university_data_ero()$year))
   })
   output$bar_gmm <- renderPlotly({
     ggplot(average_gmm, aes(x = year, fill=university)) +
       geom_bar(stat = "identity", aes(y = average_gross_monthly_median), position = "dodge") +
-      labs(title = "Bar Graph Comparing Universities Average Gross Monthly Income Over Time", 
+      labs(title = "Bar Graph showing Universities' Average GMI Over Time", 
            x = "Year", y = "Average Average Gross Monthly Income") +
       scale_x_continuous(breaks = unique(university_data_gmm()$year))
   })
