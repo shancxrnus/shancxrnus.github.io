@@ -21,7 +21,7 @@ The shiny app allows users to choose the university of interest, alongside which
 
 I used plotly so that users can hover to see the specific value of data points and zoom on areas of interest on the line graph.
 
-I also added tabsets to allow viewers to toggle between line graph visualisations and bar graphs, which allow for better comparison within each year. 
+I also added tabsets to allow viewers to toggle between line graph visualisations and bar graphs, which allow for better comparison within each year. The bar graphs allows users to not only see the overall trend but the changes of each university within each year.
 
 ```{=html}
 <iframe height="500" width="140%" frameborder="no" src="https://shancxr.shinyapps.io/sample_app_2207/"> </iframe>
