@@ -37,11 +37,10 @@ I also added tabsets to allow viewers to toggle between line graph visualisation
 
 An interesting trend observed for the changes in average overall employment rate is how the overall employment rate increased for NUS, SMU and SIT from 2020 to 2021 but decreased for NTU, SUSS, and SUTD. A possible reason for this is that employers are seeking more outspoken and proactive graduate students. For universities like SMU, they have focused on training students with heavy emphasis on oral presentations and practive group work (The Straits Times, 2023). This matches up to what employers look for in graduates, with communication, problem-solving and teamwork being highly rated by employers as valuable (Singapore Business Review, 2023). Some employers have also mentioned that NTU graduates may lack proactiveness.
 
-Meanwhile, overall gross monthly income has increased for graduates across all universities.
 
 Another interesting observation is how employment rates decreased in 2018 for NUS and SMU graduates, in 2017 for NTU graduates and in 2019 for SUTD, SIT and SUSS graduates. A possible reason for why overall employment rates decreased during this period, especially in 2019, could be that there was slow economic growth and increasing unemployment during this period which may be attributed to a bigger gap between labour market's skill and employer's demand (Seow, 2019). Differences in the trends seen may also be due to different academic calendars which results in NTU, NUS, SMU and SUSS graduates to be surveyed in November while SUTD and SIT graduates are surveyed in Feb and Mar (Data.gov.sg.,n.d.). This would impact the quarter in which employment data is taken from.
 
-
+Meanwhile, overall gross monthly income has increased for graduates across all universities.
 
 **Analysing the bar graphs**
 ![Average Overall Employment Rate](/images/baroerall.png)
