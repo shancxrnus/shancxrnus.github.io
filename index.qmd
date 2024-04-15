@@ -44,6 +44,8 @@ Another interesting observation is how employment rates decreased in 2018 for NU
 
 
 **Analysing the bar graphs**
+![Average Overall Employment Rate](/images/baroerall.png)
+![Average Gross Monthly Income](/images/bargmiall.png)
 
 Looking at the bar graphs, we can see that generally for both overall employment rate and gross monthly income is highest for SMU compared to the other universities for most of the years with there being the greatest gap in 2021. This could perhaps be due to a stereotype that SMU students can communicate well which results in employers' preferences for SMU students, likely arising due to it being know for being a 100% seminar-style teaching programme (Ministry of Education, n.d.). It has a strong co-curriculum programme and has compulsory overseas experience for all since 2018 (Singapore Management University, 2018). However, as SMU is more of a specialist school with lesser options for different majors, its average gross monthly income will thus mainly come from its school of business which may average higher.
 
