@@ -21,10 +21,10 @@ The shiny app allows users to choose the university of interest, alongside which
 
 I used plotly so that users can hover to see the specific value of data points and zoom on areas of interest on the line graph.
 
-I also added tabsets to allow viewers 
+I also added tabsets to allow viewers to toggle between line graph visualisations and bar graphs, which allow for better comparison within each year. 
 
 ```{=html}
-<iframe height="400" width="150%" frameborder="no" src="https://shancxr.shinyapps.io/sample_app_2207/"> </iframe>
+<iframe height="1000" width="140%" frameborder="no" src="https://shancxr.shinyapps.io/sample_app_2207/"> </iframe>
 ```
 
 **Analysing the line graphs**
@@ -33,6 +33,7 @@ An interesting trend observed for the changes in average overall employment rate
 Meanwhile, overall gross monthly income has increased for graduates across all universities.
 
 **Analysing the bar graphs**
+Looking at the bar graphs =, we can see that generally for both overall employment rate and gross monthly income is highest for SMU compared to the other universities for most of the years with there being the greatest gap in 2021.
 
 **Bibliography**
 

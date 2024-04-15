@@ -3,11 +3,11 @@
     "path": "~/GitHub/shancxrnus.github.io/index.qmd",
     "project_path": "index.qmd",
     "type": "quarto_markdown",
-    "hash": "2848793141",
+    "hash": "433408408",
     "contents": "",
     "dirty": false,
     "created": 1712069521914.0,
-    "source_on_save": false,
+    "source_on_save": true,
     "relative_order": 3,
     "properties": {
         "rmdVisualMode": "false",
@@ -17,16 +17,16 @@
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "1718:0",
-        "cursorPosition": "34,28",
+        "cursorPosition": "35,231",
         "scrollLine": "31",
         "docOutlineSize": "43"
     },
     "folds": "",
-    "lastKnownWriteTime": 1713173772,
+    "lastKnownWriteTime": 1713175875,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1713173772920,
+    "last_content_update": 1713175875012,
     "read_only": false,
     "read_only_alternatives": []
 }
