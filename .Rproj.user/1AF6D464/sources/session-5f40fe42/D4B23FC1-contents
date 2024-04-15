@@ -1,0 +1,30 @@
+---
+title: "Challenge 1"
+author: "Shannon Chua Xuan Run"
+date: "2024-01-16"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## About me
+
+Hi! I am Shannon, a Year 2 Psychology major who plans to second major in Communications and New Media.
+I have zero experience with coding aside from a few experimentations with .html in the past! I am hoping to learn a lot from this course and am excited to learn a new skill. 
+
+I am worried about facing challenges in this course but am determined to find solutions to fix any issues I face!
+
+## A picture of me
+```{r, out.height= "667px",out.width= "500px",echo=TRUE,eval=TRUE,fig.cap="This is a picture of me from last year! :)"}
+knitr::include_graphics("C:/Users/shanm/Desktop/me.jpg")
+```
+
+## Screenshot of my R studio Layout
+```{r, out.height= "284px",out.width= "500px",echo=TRUE,eval=TRUE,fig.cap="This is how my R Studio looks"}
+knitr::include_graphics("C:/Users/shanm/Desktop/screenshot.png")
+```
