@@ -3,7 +3,11 @@
         {
             "columnIndex": 2,
             "ascending": true
+        },
+        {
+            "columnIndex": 1,
+            "ascending": true
         }
     ],
-    "path": "~/GitHub/shancxrnus.github.io/personal_app"
+    "path": "~/GitHub/shancxrnus.github.io"
 }

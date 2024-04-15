@@ -39,6 +39,9 @@ Another interesting observation is how employment rates decreased in 2018 for NU
 
 Looking at the bar graphs, we can see that generally for both overall employment rate and gross monthly income is highest for SMU compared to the other universities for most of the years with there being the greatest gap in 2021. This could perhaps be due to a stereotype that SMU students can communicate well which results in employers' preferences for SMU students, likely arising due to it being know for being a 100% seminar-style teaching programme (Ministry of Education, n.d.). It has a strong co-curriculum programme and has compulsory overseas experience for all since 2018 (Singapore Management University, 2018). However, as SMU is more of a specialist school with lesser options for different majors, it's average gross monthly income will thus mainly come from it's school of business which may average higher.
 
+**Challenges**
+One main challenge I faced when going through this final project was that I was initially over-ambitious and made my problem statement unfeasible, causing me to encounter issues that I was unable to solve. My initial problem statement required me to include every major from every university so prospective students can see the data down to each major and school, however this turned out to be unfeasible as the graphs became cluttered with labels making it unreadible. Furthermore, there were issues faced with how the names of degrees change over the years as well as how different universities have different names of degrees for the same course. 
+
 **Bibliography**
 Data.gov.sg. (n.d.).*Graduate Employment Survey - NTU, NUS, SIT, SMU, Suss & Sutd.*  https://beta.data.gov.sg/datasets/d_3c55210de27fcccda2ed0c63fdd2b352/view 
 
