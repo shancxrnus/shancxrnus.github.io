@@ -16,7 +16,7 @@ average_ero <- ges_clean %>%
 average_gmm <- ges_clean %>%
   group_by(year, university) %>%
   summarise(average_gross_monthly_median = mean(gross_monthly_median, na.rm = TRUE))
-  
+
 combined_data <- list()
 
 university_ero <- list(ges_clean$year,ges_clean$university, ges_clean$degree)
@@ -44,9 +44,9 @@ ui <- fluidPage(
       tabsetPanel(
         tabPanel("Line Graph", plotlyOutput("line")),
         tabPanel("Bar Chart Comparing Overall Employment Rate (OER)", plotlyOutput("bar_ero")),
-        tabPanel("Bar Chart Comparing Average Gross Monthly Income (GMI)", plotlyOutput("bar_gmm"))
-      )
+        tabPanel("Bar Chart Comparing Average Gross Monthly Income (GMI)", plotlyOutput("bar_gmm")),
     )
+  )
   )
 )
 
@@ -81,13 +81,13 @@ server <- function(input, output) {
       # Plot average overall employment rate over time
       ggplot(university_data_ero(), aes(x = year, y = average_employment_rate_overall)) +
         geom_line() +
-        labs(x = "Year", y = "Average Overall Employment Rate(%)", title = "Overall Employment Rate Over Time") +
+        labs(x = "Year", y = "Average Overall Employment Rate (%)", title = "Overall Employment Rate Over Time") +
         scale_x_continuous(breaks = unique(university_data_ero()$year))
     } else if (input$dataobserved == "Average Gross Monthly Income") { #What happens if other option is selected
       # Plot average gross monthly income over time
       ggplot(university_data_gmm(), aes(x = year, y = average_gross_monthly_median)) +
         geom_line() +
-        labs(x = "Year", y = "Gross Monthly Income Median(S$)", title = "Gross Monthly Income Median Over Time") +
+        labs(x = "Year", y = "Gross Monthly Income Median (S$)", title = "Gross Monthly Income Median Over Time") +
         scale_x_continuous(breaks = unique(university_data_gmm()$year))
     }
   })
@@ -96,14 +96,14 @@ server <- function(input, output) {
     ggplot(average_ero, aes(x = year, fill=university)) +
       geom_bar(stat = "identity", aes(y = average_employment_rate_overall), position = "dodge") +
       labs(title = "Bar Graph showing Universities' Average OER Over Time", 
-           x = "Year", y = "Average Employment Rate overall") +
+           x = "Year", y = "Average Employment Rate overall (%)") +
     scale_x_continuous(breaks = unique(university_data_ero()$year))
   })
   output$bar_gmm <- renderPlotly({
     ggplot(average_gmm, aes(x = year, fill=university)) +
       geom_bar(stat = "identity", aes(y = average_gross_monthly_median), position = "dodge") +
       labs(title = "Bar Graph showing Universities' Average GMI Over Time", 
-           x = "Year", y = "Average Average Gross Monthly Income") +
+           x = "Year", y = "Average Average Gross Monthly Income (S$)") +
       scale_x_continuous(breaks = unique(university_data_gmm()$year))
   })
 }

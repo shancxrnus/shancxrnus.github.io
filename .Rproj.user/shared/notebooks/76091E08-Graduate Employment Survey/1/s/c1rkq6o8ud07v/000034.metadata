@@ -1,1 +1,0 @@
-{"height":377.00865265760197,"width":610.0,"size_behavior":0,"conditions":[[1,"Warning: \u001B[38;5;232mRemoved 89 rows containing missing values or values outside the scale\nrange (`geom_point()`).\u001B[39m"]]}
