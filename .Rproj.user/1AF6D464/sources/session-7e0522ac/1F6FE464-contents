@@ -1,4 +1,5 @@
 library(shiny)
+library(bslib)
 library(tidyverse)
 library(ggplot2)
 library(plotly)
@@ -15,8 +16,10 @@ average_ero <- ges_clean %>%
 average_gmm <- ges_clean %>%
   group_by(year, university) %>%
   summarise(average_gross_monthly_median = mean(gross_monthly_median, na.rm = TRUE))
-
+  
 combined_data <- list()
+
+university_ero <- list(ges_clean$year,ges_clean$university, ges_clean$degree)
 
 nus_years <- c(2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021)
 ntu_years <- c(2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021)
@@ -38,7 +41,11 @@ ui <- fluidPage(
                   choices = c("Average Overall Employment Rate","Average Gross Monthly Income"))
     ),
     mainPanel(
-      plotlyOutput("line")
+      tabsetPanel(
+        tabPanel("Line Graph", plotlyOutput("line")),
+        tabPanel("Bar Chart Comparing Overall Employment Rate", plotlyOutput("bar_ero")),
+        tabPanel("Bar Chart Comparing Average Gross Monthly Income", plotlyOutput("bar_gmm"))
+      )
     )
   )
 )
@@ -83,6 +90,21 @@ server <- function(input, output) {
         labs(x = "Year", y = "Gross Monthly Income Median(S$)", title = "Gross Monthly Income Median Over Time") +
         scale_x_continuous(breaks = unique(university_data_gmm()$year))
     }
+  })
+  # Define the output for the combined data table
+  output$bar_ero <- renderPlotly({
+    ggplot(average_ero, aes(x = year, fill=university)) +
+      geom_bar(stat = "identity", aes(y = average_employment_rate_overall), position = "dodge") +
+      labs(title = "Bar Graph showing changes in Overall Employment Rate Over Time for every Univeristy", 
+           x = "Year", y = "Average Employment Rate overall") +
+    scale_x_continuous(breaks = unique(university_data_ero()$year))
+  })
+  output$bar_gmm <- renderPlotly({
+    ggplot(average_gmm, aes(x = year, fill=university)) +
+      geom_bar(stat = "identity", aes(y = average_gross_monthly_median), position = "dodge") +
+      labs(title = "Bar Graph showing changes in Average Gross Monthly Income Over Time for every Univeristy", 
+           x = "Year", y = "Average Employment Rate overall") +
+      scale_x_continuous(breaks = unique(university_data_gmm()$year))
   })
 }
 # Run the application 

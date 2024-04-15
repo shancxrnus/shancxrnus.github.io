@@ -1,0 +1,21 @@
+---
+title: "Week 12 Final Diary Entry"
+author: "Shannon Chua Xuan Run"
+date: "2024-04-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Week 12 Final Diary Entry
+
+##(1) Reflect on your experience doing the project using R
+Having never touched R and having little experience in coding as a whole, this module was challenging but at the same time motivating for me to learn a new skill. The lectures equipped me with the basic foundational skills which are important to understand in order to be flexible with my code for this project but the previous assignments have equipped me with the habit to look outside of the syllabus for new skills to learn.
+
+##(2) What have you learned in NM2207, and how can that be helpful in your future career?
+I have learnt how to identify and solve key issues while coding in NM2207 and trained myself to be more meticulous. Asking questions when necessary is also something I have learnt to be essential when it comes to problem-solving and looking outside the box. These are all soft skills that can be applied to my future career and everyday life. 
+
+##(3) Try to identify use-cases within your specialization and future industry that you might benefit by using R.
+As a psychology major, I have had previous experience in R specifically for the presentation of datasets. Now with a better understanding of how to make data tidy and how to customise the organisation data to get the necessary information, I can apply this for future data visualisations needed for statistical analysis.
