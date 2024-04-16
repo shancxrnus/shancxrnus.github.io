@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>shancxrnus.github.io - Shannon Chua’s website</title>
+<title>shancxrnus.github.io - Trends in Overall Employment Rate and Gross Monthly Income in Universities</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,14 +101,27 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><strong>Introduction</strong></a></li>
+  <li><a href="#identified-dataset-for-data-story" id="toc-identified-dataset-for-data-story" class="nav-link" data-scroll-target="#identified-dataset-for-data-story"><strong>Identified Dataset for Data Story</strong></a></li>
+  <li><a href="#shiny-app-how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021" id="toc-shiny-app-how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021" class="nav-link" data-scroll-target="#shiny-app-how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021"><strong>Shiny App: How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?</strong></a></li>
+  <li><a href="#analysing-the-line-graphs" id="toc-analysing-the-line-graphs" class="nav-link" data-scroll-target="#analysing-the-line-graphs"><strong>Analysing the line graphs</strong></a></li>
+  <li><a href="#analysing-the-bar-graphs" id="toc-analysing-the-bar-graphs" class="nav-link" data-scroll-target="#analysing-the-bar-graphs"><strong>Analysing the bar graphs</strong></a></li>
+  <li><a href="#challenges" id="toc-challenges" class="nav-link" data-scroll-target="#challenges"><strong>Challenges</strong></a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><strong>Conclusion</strong></a></li>
+  <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography"><strong>Bibliography</strong></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Shannon Chua’s website</h1>
+<h1 class="title">Trends in Overall Employment Rate and Gross Monthly Income in Universities</h1>
 </div>
 
 
@@ -123,26 +136,46 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><strong>Introduction</strong></p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction"><strong>Introduction</strong></h2>
 <p>Hello! I’m Shannon Chua and I’m currently a Year 2 Psychology student who is second majoring in Communications and New Media. For my final project, I am interested in understanding the changes and trends of employment rate and monthly income of Singapore university graduates over the years.</p>
-<p><strong>Identified Dataset for Data Story</strong></p>
+</section>
+<section id="identified-dataset-for-data-story" class="level2">
+<h2 class="anchored" data-anchor-id="identified-dataset-for-data-story"><strong>Identified Dataset for Data Story</strong></h2>
 <p>A dataset I have identified is from data.gov.sg. It is a dataset from the Graduate Employment Survey conducted by NTU, NUS, SMU, SIT (from 2014), SUTD (from 2015) and SUSS (from 2018) annually. The data ranges from 2013 to 2021. The data is published by Ministry of Education for prospective students. <a href="https://beta.data.gov.sg/datasets/d_3c55210de27fcccda2ed0c63fdd2b352/view" class="uri">https://beta.data.gov.sg/datasets/d_3c55210de27fcccda2ed0c63fdd2b352/view</a></p>
 <p>My problem statement is: How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?</p>
-<p><strong>Shiny App: How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?</strong></p>
+<p>I was interested in seeing this trend as given the uncertain job market these days, it would be helpful to have an overall observation of trends over the years and to better understand what factors employers may look for. Given major discourse over “which university is better”. This would help prospective students clear doubts about the degree to which the university you enter impacts your future and better plan which university and major they would be interested in taking.</p>
+</section>
+<section id="shiny-app-how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021" class="level2">
+<h2 class="anchored" data-anchor-id="shiny-app-how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021"><strong>Shiny App: How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?</strong></h2>
 <p>I chose to plot a line graph as the continuous variable I am dealing with for the x-axis is time, as such, being able to view the data points on a continuum will allow us to have a bigger picture of the overall trends and allow us to possibly make predictions. This allows viewers to check the data trends for each university respectively and make projections accordingly.</p>
 <p>The shiny app allows users to choose the university of interest, alongside which measurement they are interested in viewing - average employment rate or average gross monthly income across all majors.</p>
 <p>I used plotly so that users can hover to see the specific value of data points and zoom on areas of interest on the line graph.</p>
 <p>I also added tabsets to allow viewers to toggle between line graph visualisations and bar graphs, which allow for better comparison within each year. The bar graphs allows users to not only see the overall trend but the changes of each university within each year.</p>
 <iframe height="500" width="140%" frameborder="no" src="https://shancxr.shinyapps.io/sample_app_2207/"> </iframe>
-<p><strong>Analysing the line graphs</strong> <img src=".\images/oerlinenus.png" class="img-fluid" alt="NUS"> <img src=".\images/oerlinesmu.png" class="img-fluid" alt="SMU"> <img src=".\images/oerlinesit.png" class="img-fluid" alt="SIT"> <img src=".\images/oerlinentu.png" class="img-fluid" alt="NTU"> <img src=".\images/oerlinesuss.png" class="img-fluid" alt="SUSS"> <img src=".\images/oerlinesutd.png" class="img-fluid" alt="SUTD"></p>
+</section>
+<section id="analysing-the-line-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="analysing-the-line-graphs"><strong>Analysing the line graphs</strong></h2>
+<p><img src=".\images/oerlinenus.png" class="img-fluid" alt="NUS"> <img src=".\images/oerlinesmu.png" class="img-fluid" alt="SMU"> <img src=".\images/oerlinesit.png" class="img-fluid" alt="SIT"> <img src=".\images/oerlinentu.png" class="img-fluid" alt="NTU"> <img src=".\images/oerlinesuss.png" class="img-fluid" alt="SUSS"> <img src=".\images/oerlinesutd.png" class="img-fluid" alt="SUTD"></p>
 <p>An interesting trend observed for the changes in average overall employment rate is how the overall employment rate increased for NUS, SMU and SIT from 2020 to 2021 but decreased for NTU, SUSS, and SUTD. A possible reason for this is that employers are seeking more outspoken and proactive graduate students. For universities like SMU, they have focused on training students with heavy emphasis on oral presentations and practive group work (The Straits Times, 2023). This matches up to what employers look for in graduates, with communication, problem-solving and teamwork being highly rated by employers as valuable (Singapore Business Review, 2023). Some employers have also mentioned that NTU graduates may lack proactiveness.</p>
 <p>Another interesting observation is how employment rates decreased in 2018 for NUS and SMU graduates, in 2017 for NTU graduates and in 2019 for SUTD, SIT and SUSS graduates. A possible reason for why overall employment rates decreased during this period, especially in 2019, could be that there was slow economic growth and increasing unemployment during this period which may be attributed to a bigger gap between labour market’s skill and employer’s demand (Seow, 2019). Differences in the trends seen may also be due to different academic calendars which results in NTU, NUS, SMU and SUSS graduates to be surveyed in November while SUTD and SIT graduates are surveyed in Feb and Mar (Data.gov.sg.,n.d.). This would impact the quarter in which employment data is taken from.</p>
 <p>Meanwhile, overall gross monthly income has increased for graduates across all universities.</p>
-<p><strong>Analysing the bar graphs</strong> <img src=".\images/baroerall.png" class="img-fluid" alt="Average Overall Employment Rate"> <img src=".\images/bargmiall.png" class="img-fluid" alt="Average Gross Monthly Income"></p>
+</section>
+<section id="analysing-the-bar-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="analysing-the-bar-graphs"><strong>Analysing the bar graphs</strong></h2>
+<p><img src=".\images/baroerall.png" class="img-fluid" alt="Average Overall Employment Rate"> <img src=".\images/bargmiall.png" class="img-fluid" alt="Average Gross Monthly Income"></p>
 <p>Looking at the bar graphs, we can see that generally for both overall employment rate and gross monthly income is highest for SMU compared to the other universities for most of the years with there being the greatest gap in 2021. This could perhaps be due to a stereotype that SMU students can communicate well which results in employers’ preferences for SMU students, likely arising due to it being know for being a 100% seminar-style teaching programme (Ministry of Education, n.d.). It has a strong co-curriculum programme and has compulsory overseas experience for all since 2018 (Singapore Management University, 2018). However, as SMU is more of a specialist school with lesser options for different majors, its average gross monthly income will thus mainly come from its school of business which may average higher.</p>
-<p><strong>Challenges</strong></p>
+</section>
+<section id="challenges" class="level2">
+<h2 class="anchored" data-anchor-id="challenges"><strong>Challenges</strong></h2>
 <p>One main challenge I faced when going through this final project was that I was initially over-ambitious and made my problem statement unfeasible, causing me to encounter issues that I was unable to solve. My initial problem statement required me to include every major from every university so prospective students can see the data down to each major and school, however this turned out to be unfeasible as the graphs became cluttered with labels making it unreadible. Furthermore, there were issues faced with how the names of degrees change over the years as well as how different universities have different names of degrees for the same course.</p>
-<p><strong>Bibliography</strong></p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion"><strong>Conclusion</strong></h2>
+<p>The visualisations here are meant to give users a better understanding of overall trends to observe differences between universities. Minimal differences are generally observed between universities. Further research into changes in market trends would give users a more comprehensive understanding in order to make the best choices for their career.</p>
+</section>
+<section id="bibliography" class="level2">
+<h2 class="anchored" data-anchor-id="bibliography"><strong>Bibliography</strong></h2>
 <p>Data.gov.sg. (n.d.).<em>Graduate Employment Survey - NTU, NUS, SIT, SMU, Suss &amp; Sutd.</em> https://beta.data.gov.sg/datasets/d_3c55210de27fcccda2ed0c63fdd2b352/view</p>
 <p>Ministry of Education (MOE). (n.d.) <em>Singapore Management University (SMU).</em> https://www.moe.gov.sg/post-secondary/overview/autonomous-universities/smu#:~:text=SMU%20is%20a%20specialised%20and,Business%20management</p>
 <p>Seow, J. (2019, October 25). Unemployment rises to highest level in a decade in Q3 2019, but employment growth also up. The Straits Times. https://www.straitstimes.com/singapore/manpower/unemployment-rises-to-highest-level-in-a-decade-in-q3-2019-but-employment-growth</p>
@@ -151,6 +184,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The Straits Times. (2023, May 12). <em>Getting hired faster and higher wages: How this university is setting up its graduates for Success</em>. Getting hired faster and higher wages: How this university is setting up its graduates for success. https://www.straitstimes.com/singapore/parenting-education/smu-hired-faster-higher-wages-university-graduates</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
