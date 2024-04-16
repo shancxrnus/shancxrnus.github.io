@@ -107,6 +107,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><strong>Introduction</strong></a></li>
   <li><a href="#identified-dataset-for-data-story-and-rationale" id="toc-identified-dataset-for-data-story-and-rationale" class="nav-link" data-scroll-target="#identified-dataset-for-data-story-and-rationale"><strong>Identified Dataset for Data Story and Rationale</strong></a></li>
+  <li><a href="#cleaning-of-data" id="toc-cleaning-of-data" class="nav-link" data-scroll-target="#cleaning-of-data"><strong>Cleaning of data</strong></a></li>
   <li><a href="#shiny-app" id="toc-shiny-app" class="nav-link" data-scroll-target="#shiny-app"><strong>Shiny App</strong></a>
   <ul class="collapse">
   <li><a href="#how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021" id="toc-how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021" class="nav-link" data-scroll-target="#how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021"><strong>How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?</strong></a></li>
@@ -148,6 +149,10 @@ ul.task-list li input[type="checkbox"] {
 <p>A dataset I have identified is from data.gov.sg. It is a dataset from the Graduate Employment Survey conducted by NTU, NUS, SMU, SIT (from 2014), SUTD (from 2015) and SUSS (from 2018) annually. The data ranges from 2013 to 2021. The data is published by Ministry of Education for prospective students. <a href="https://beta.data.gov.sg/datasets/d_3c55210de27fcccda2ed0c63fdd2b352/view" class="uri">https://beta.data.gov.sg/datasets/d_3c55210de27fcccda2ed0c63fdd2b352/view</a></p>
 <p>My problem statement is: How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?</p>
 <p>I was interested in seeing this trend as given the uncertain job market these days, it would be helpful to have an overall observation of trends over the years and to better understand what factors employers may look for. Given major discourse over “which university is better”. This would help prospective students clear doubts about the degree to which the university you enter impacts your future and better plan which university and major they would be interested in taking.</p>
+</section>
+<section id="cleaning-of-data" class="level2">
+<h2 class="anchored" data-anchor-id="cleaning-of-data"><strong>Cleaning of data</strong></h2>
+<p>Given that there are a large series of different degrees and the name of degrees change over the years, I chose to do an overall view so as to not overwhelm the user and confuse them. Data cleaning mostly involved removal of na values as well as manipulation of data to provide averages grouped based on each university and year. Na values ran across whole rows of observations and since we are looking at overall trends, there would not be inequalities through it’s removal.</p>
 </section>
 <section id="shiny-app" class="level2">
 <h2 class="anchored" data-anchor-id="shiny-app"><strong>Shiny App</strong></h2>

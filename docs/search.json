@@ -82,5 +82,12 @@
     "title": "Trends in Overall Employment Rate and Gross Monthly Income in Universities",
     "section": "Identified Dataset for Data Story and Rationale",
     "text": "Identified Dataset for Data Story and Rationale\nA dataset I have identified is from data.gov.sg. It is a dataset from the Graduate Employment Survey conducted by NTU, NUS, SMU, SIT (from 2014), SUTD (from 2015) and SUSS (from 2018) annually. The data ranges from 2013 to 2021. The data is published by Ministry of Education for prospective students. https://beta.data.gov.sg/datasets/d_3c55210de27fcccda2ed0c63fdd2b352/view\nMy problem statement is: How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?\nI was interested in seeing this trend as given the uncertain job market these days, it would be helpful to have an overall observation of trends over the years and to better understand what factors employers may look for. Given major discourse over “which university is better”. This would help prospective students clear doubts about the degree to which the university you enter impacts your future and better plan which university and major they would be interested in taking."
+  },
+  {
+    "objectID": "index.html#cleaning-of-data",
+    "href": "index.html#cleaning-of-data",
+    "title": "Trends in Overall Employment Rate and Gross Monthly Income in Universities",
+    "section": "Cleaning of data",
+    "text": "Cleaning of data\nGiven that there are a large series of different degrees and the name of degrees change over the years, I chose to do an overall view so as to not overwhelm the user and confuse them. Data cleaning mostly involved removal of na values as well as manipulation of data to provide averages grouped based on each university and year. Na values ran across whole rows of observations and since we are looking at overall trends, there would not be inequalities through it’s removal."
   }
 ]

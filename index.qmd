@@ -15,6 +15,9 @@ My problem statement is: How have the average employment rate and average gross 
 
 I was interested in seeing this trend as given the uncertain job market these days, it would be helpful to have an overall observation of trends over the years and to better understand what factors employers may look for. Given major discourse over "which university is better". This would help prospective students clear doubts about the degree to which the university you enter impacts your future and better plan which university and major they would be interested in taking.
 
+## **Cleaning of data**
+Given that there are a large series of different degrees and the name of degrees change over the years, I chose to do an overall view so as to not overwhelm the user and confuse them. Data cleaning mostly involved removal of na values as well as manipulation of data to provide averages grouped based on each university and year. Na values ran across whole rows of observations and since we are looking at overall trends, there would not be inequalities through it's removal.
+
 ## **Shiny App**
 ### **How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?**
 
