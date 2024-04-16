@@ -19,7 +19,7 @@ I was interested in seeing this trend as given the uncertain job market these da
 Given that there are a large series of different degrees and the name of degrees change over the years, I chose to do an overall view so as to not overwhelm the user and confuse them. Data cleaning mostly involved removal of na values as well as manipulation of data to provide averages grouped based on each university and year. Na values ran across whole rows of observations and since we are looking at overall trends, there would not be inequalities through it's removal.
 
 ## **Shiny App**
-### **How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?**
+**How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?**
 
 I chose to plot a line graph as the continuous variable I am dealing with for the x-axis is time, as such, being able to view the data points on a continuum will allow us to have a bigger picture of the overall trends and allow us to possibly make predictions. This allows viewers to check the data trends for each university respectively and make projections accordingly.
 
