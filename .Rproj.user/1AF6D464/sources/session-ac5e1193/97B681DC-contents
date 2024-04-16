@@ -13,6 +13,8 @@ A dataset I have identified is from data.gov.sg. It is a dataset from the Gradua
 
 My problem statement is: How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?
 
+I was interested in seeing this trend as given the uncertain job market these days, it would be helpful to have an overall observation of trends over the years and to better understand what factors employers may look for. This would help prospective students better plan which university and major they would be interested in taking.
+
 **Shiny App: How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?**
 
 I chose to plot a line graph as the continuous variable I am dealing with for the x-axis is time, as such, being able to view the data points on a continuum will allow us to have a bigger picture of the overall trends and allow us to possibly make predictions. This allows viewers to check the data trends for each university respectively and make projections accordingly.
