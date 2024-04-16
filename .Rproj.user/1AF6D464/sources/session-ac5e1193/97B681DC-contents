@@ -15,7 +15,8 @@ My problem statement is: How have the average employment rate and average gross 
 
 I was interested in seeing this trend as given the uncertain job market these days, it would be helpful to have an overall observation of trends over the years and to better understand what factors employers may look for. Given major discourse over "which university is better". This would help prospective students clear doubts about the degree to which the university you enter impacts your future and better plan which university and major they would be interested in taking.
 
-## **Shiny App: How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?**
+## **Shiny App**
+### **How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?**
 
 I chose to plot a line graph as the continuous variable I am dealing with for the x-axis is time, as such, being able to view the data points on a continuum will allow us to have a bigger picture of the overall trends and allow us to possibly make predictions. This allows viewers to check the data trends for each university respectively and make projections accordingly.
 
@@ -47,7 +48,6 @@ Meanwhile, overall gross monthly income has increased for graduates across all u
 ## **Analysing the bar graphs**
 ![Average Overall Employment Rate](/images/baroerall.png)
 ![Average Gross Monthly Income](/images/bargmiall.png)
-
 Looking at the bar graphs, we can see that generally for both overall employment rate and gross monthly income is highest for SMU compared to the other universities for most of the years with there being the greatest gap in 2021. This could perhaps be due to a stereotype that SMU students can communicate well which results in employers' preferences for SMU students, likely arising due to it being know for being a 100% seminar-style teaching programme (Ministry of Education, n.d.). It has a strong co-curriculum programme and has compulsory overseas experience for all since 2018 (Singapore Management University, 2018). However, as SMU is more of a specialist school with lesser options for different majors, its average gross monthly income will thus mainly come from its school of business which may average higher.
 
 ## **Challenges**

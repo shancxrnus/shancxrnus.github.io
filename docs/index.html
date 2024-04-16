@@ -107,7 +107,10 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><strong>Introduction</strong></a></li>
   <li><a href="#identified-dataset-for-data-story" id="toc-identified-dataset-for-data-story" class="nav-link" data-scroll-target="#identified-dataset-for-data-story"><strong>Identified Dataset for Data Story</strong></a></li>
-  <li><a href="#shiny-app-how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021" id="toc-shiny-app-how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021" class="nav-link" data-scroll-target="#shiny-app-how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021"><strong>Shiny App: How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?</strong></a></li>
+  <li><a href="#shiny-app" id="toc-shiny-app" class="nav-link" data-scroll-target="#shiny-app"><strong>Shiny App</strong></a>
+  <ul class="collapse">
+  <li><a href="#how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021" id="toc-how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021" class="nav-link" data-scroll-target="#how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021"><strong>How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?</strong></a></li>
+  </ul></li>
   <li><a href="#analysing-the-line-graphs" id="toc-analysing-the-line-graphs" class="nav-link" data-scroll-target="#analysing-the-line-graphs"><strong>Analysing the line graphs</strong></a></li>
   <li><a href="#analysing-the-bar-graphs" id="toc-analysing-the-bar-graphs" class="nav-link" data-scroll-target="#analysing-the-bar-graphs"><strong>Analysing the bar graphs</strong></a></li>
   <li><a href="#challenges" id="toc-challenges" class="nav-link" data-scroll-target="#challenges"><strong>Challenges</strong></a></li>
@@ -146,13 +149,16 @@ ul.task-list li input[type="checkbox"] {
 <p>My problem statement is: How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?</p>
 <p>I was interested in seeing this trend as given the uncertain job market these days, it would be helpful to have an overall observation of trends over the years and to better understand what factors employers may look for. Given major discourse over “which university is better”. This would help prospective students clear doubts about the degree to which the university you enter impacts your future and better plan which university and major they would be interested in taking.</p>
 </section>
-<section id="shiny-app-how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021" class="level2">
-<h2 class="anchored" data-anchor-id="shiny-app-how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021"><strong>Shiny App: How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?</strong></h2>
+<section id="shiny-app" class="level2">
+<h2 class="anchored" data-anchor-id="shiny-app"><strong>Shiny App</strong></h2>
+<section id="how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021" class="level3">
+<h3 class="anchored" data-anchor-id="how-have-the-average-employment-rate-and-average-gross-monthly-income-of-singaporean-university-graduates-changed-over-time-from-2013-to-2021"><strong>How have the average employment rate and average gross monthly income of Singaporean university graduates changed over time from 2013 to 2021?</strong></h3>
 <p>I chose to plot a line graph as the continuous variable I am dealing with for the x-axis is time, as such, being able to view the data points on a continuum will allow us to have a bigger picture of the overall trends and allow us to possibly make predictions. This allows viewers to check the data trends for each university respectively and make projections accordingly.</p>
 <p>The shiny app allows users to choose the university of interest, alongside which measurement they are interested in viewing - average employment rate or average gross monthly income across all majors.</p>
 <p>I used plotly so that users can hover to see the specific value of data points and zoom on areas of interest on the line graph.</p>
 <p>I also added tabsets to allow viewers to toggle between line graph visualisations and bar graphs, which allow for better comparison within each year. The bar graphs allows users to not only see the overall trend but the changes of each university within each year.</p>
 <iframe height="500" width="140%" frameborder="no" src="https://shancxr.shinyapps.io/sample_app_2207/"> </iframe>
+</section>
 </section>
 <section id="analysing-the-line-graphs" class="level2">
 <h2 class="anchored" data-anchor-id="analysing-the-line-graphs"><strong>Analysing the line graphs</strong></h2>
@@ -163,8 +169,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="analysing-the-bar-graphs" class="level2">
 <h2 class="anchored" data-anchor-id="analysing-the-bar-graphs"><strong>Analysing the bar graphs</strong></h2>
-<p><img src=".\images/baroerall.png" class="img-fluid" alt="Average Overall Employment Rate"> <img src=".\images/bargmiall.png" class="img-fluid" alt="Average Gross Monthly Income"></p>
-<p>Looking at the bar graphs, we can see that generally for both overall employment rate and gross monthly income is highest for SMU compared to the other universities for most of the years with there being the greatest gap in 2021. This could perhaps be due to a stereotype that SMU students can communicate well which results in employers’ preferences for SMU students, likely arising due to it being know for being a 100% seminar-style teaching programme (Ministry of Education, n.d.). It has a strong co-curriculum programme and has compulsory overseas experience for all since 2018 (Singapore Management University, 2018). However, as SMU is more of a specialist school with lesser options for different majors, its average gross monthly income will thus mainly come from its school of business which may average higher.</p>
+<p><img src=".\images/baroerall.png" class="img-fluid" alt="Average Overall Employment Rate"> <img src=".\images/bargmiall.png" class="img-fluid" alt="Average Gross Monthly Income"> Looking at the bar graphs, we can see that generally for both overall employment rate and gross monthly income is highest for SMU compared to the other universities for most of the years with there being the greatest gap in 2021. This could perhaps be due to a stereotype that SMU students can communicate well which results in employers’ preferences for SMU students, likely arising due to it being know for being a 100% seminar-style teaching programme (Ministry of Education, n.d.). It has a strong co-curriculum programme and has compulsory overseas experience for all since 2018 (Singapore Management University, 2018). However, as SMU is more of a specialist school with lesser options for different majors, its average gross monthly income will thus mainly come from its school of business which may average higher.</p>
 </section>
 <section id="challenges" class="level2">
 <h2 class="anchored" data-anchor-id="challenges"><strong>Challenges</strong></h2>
